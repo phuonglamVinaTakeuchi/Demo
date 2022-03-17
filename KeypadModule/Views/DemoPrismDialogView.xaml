@@ -1,0 +1,37 @@
+﻿<UserControl
+  x:Class="KeypadModule.Views.DemoPrismDialogView"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+  xmlns:prism="http://prismlibrary.com/"
+  xmlns:viewModels1="clr-namespace:KeypadModule.ViewModels"
+  xmlns:localization="clr-namespace:Demo.Core.Localization;assembly=Demo.Core.Localization"
+  d:DataContext="{d:DesignInstance Type=viewModels1:DemoPrismDialogViewModel}"
+  d:DesignHeight="450"
+  d:DesignWidth="800"
+  prism:ViewModelLocator.AutoWireViewModel="True"
+  mc:Ignorable="d"
+  Padding="20"       
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+  <Grid>
+    <md:ColorZone VerticalAlignment="Center"
+                  HorizontalAlignment="Center" Width="200">
+      <StackPanel>
+        <TextBlock Text="Please Enter Your Number"
+                   HorizontalAlignment="Center"/>
+        <TextBox Text="{Binding Content}"
+                 md:HintAssist.Hint="Number"
+                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                 Margin="0 20 0 0"/>
+        <Button         Command="{Binding CloseDialogCommand}"
+                        CommandParameter="Ok"
+                        Content="Close" 
+                        VerticalAlignment="Center" HorizontalAlignment="Center"
+                        Margin="0 20 0 20"/>
+      </StackPanel>
+    </md:ColorZone>
+  </Grid>
+</UserControl>

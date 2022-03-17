@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Test", "Demo\Demo.Test.csproj", "{24ED2EF1-BFA7-4B65-8A34-527CD876D350}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{07286C53-F42D-48F4-8A67-43D96B919AA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Core.VirtualKeyboard", "Keypad\Demo.Core.VirtualKeyboard.csproj", "{6EA2CDD2-B868-4544-B049-C61337C1E685}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module", "Module", "{7DFF206B-B782-44C5-9716-3E5868BACB6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{53EC4CF7-E0BB-43BD-90CD-1CB19EDBE986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeypadModule", "KeypadModule\KeypadModule.csproj", "{A360BD28-4975-45AC-AC67-467557B7274C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Core.Localization", "Localization\Demo.Core.Localization.csproj", "{F76A4FDC-B8E7-40BE-9E56-45263EF610FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Core", "Demo.Core\Demo.Core.csproj", "{317281B7-5DA0-44F5-97C5-CEEEE4759B90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24ED2EF1-BFA7-4B65-8A34-527CD876D350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24ED2EF1-BFA7-4B65-8A34-527CD876D350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24ED2EF1-BFA7-4B65-8A34-527CD876D350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24ED2EF1-BFA7-4B65-8A34-527CD876D350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA2CDD2-B868-4544-B049-C61337C1E685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA2CDD2-B868-4544-B049-C61337C1E685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA2CDD2-B868-4544-B049-C61337C1E685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA2CDD2-B868-4544-B049-C61337C1E685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A360BD28-4975-45AC-AC67-467557B7274C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A360BD28-4975-45AC-AC67-467557B7274C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A360BD28-4975-45AC-AC67-467557B7274C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A360BD28-4975-45AC-AC67-467557B7274C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F76A4FDC-B8E7-40BE-9E56-45263EF610FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F76A4FDC-B8E7-40BE-9E56-45263EF610FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F76A4FDC-B8E7-40BE-9E56-45263EF610FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F76A4FDC-B8E7-40BE-9E56-45263EF610FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317281B7-5DA0-44F5-97C5-CEEEE4759B90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317281B7-5DA0-44F5-97C5-CEEEE4759B90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317281B7-5DA0-44F5-97C5-CEEEE4759B90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317281B7-5DA0-44F5-97C5-CEEEE4759B90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{24ED2EF1-BFA7-4B65-8A34-527CD876D350} = {07286C53-F42D-48F4-8A67-43D96B919AA0}
+		{6EA2CDD2-B868-4544-B049-C61337C1E685} = {53EC4CF7-E0BB-43BD-90CD-1CB19EDBE986}
+		{A360BD28-4975-45AC-AC67-467557B7274C} = {7DFF206B-B782-44C5-9716-3E5868BACB6A}
+		{F76A4FDC-B8E7-40BE-9E56-45263EF610FC} = {53EC4CF7-E0BB-43BD-90CD-1CB19EDBE986}
+		{317281B7-5DA0-44F5-97C5-CEEEE4759B90} = {53EC4CF7-E0BB-43BD-90CD-1CB19EDBE986}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D00BD3C5-1FF8-47D2-8D66-C263E5C60FFC}
+	EndGlobalSection
+EndGlobal
