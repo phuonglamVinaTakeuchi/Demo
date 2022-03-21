@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace Demo.Core.Helper
 {
-    public static class TextboxFocusExtension
+    public static class TextBoxFocusExtension
     {
         public static bool GetIsFocused(DependencyObject obj)
         {
@@ -21,7 +22,7 @@ namespace Demo.Core.Helper
 
         public static readonly DependencyProperty IsFocusedProperty =
             DependencyProperty.RegisterAttached(
-                "IsFocused", typeof(bool), typeof(TextboxFocusExtension),
+                "IsFocused", typeof(bool), typeof(TextBoxFocusExtension),
                 new UIPropertyMetadata(false, OnIsFocusedPropertyChanged));
 
         private static void OnIsFocusedPropertyChanged(
@@ -31,6 +32,7 @@ namespace Demo.Core.Helper
             var uie = (UIElement)d;
             if ((bool)e.NewValue)
             {
+                if(uie is TextBox)
                 uie.Focus(); // Don't care about false values.
             }
         }

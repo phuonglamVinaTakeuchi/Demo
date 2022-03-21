@@ -1,11 +1,12 @@
 ﻿<Window
-  x:Class="Demo.Views.MainView"
+  x:Class="Demo.Test.Views.MainView"
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
   xmlns:localization="clr-namespace:Demo.Core.Localization;assembly=Demo.Core.Localization"
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
   xmlns:prism="http://prismlibrary.com/"
+  prism:ViewModelLocator.AutoWireViewModel="True"
   xmlns:viewModels="clr-namespace:Demo.Test.ViewModels"
   Title="{Binding Title}"
   Width="800"
@@ -13,13 +14,14 @@
   d:DataContext="{d:DesignInstance Type=viewModels:MainViewModel}"
   mc:Ignorable="d"
   TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-        TextElement.FontWeight="Regular"
-        TextElement.FontSize="13"
-        TextOptions.TextFormattingMode="Ideal" 
-        TextOptions.TextRenderingMode="Auto"        
-        Background="{DynamicResource MaterialDesignPaper}"
-        FontFamily="{DynamicResource MaterialDesignFont}">
-  <Grid>
-    <ContentControl prism:RegionManager.RegionName="{x:Static localization:RegionName.MAIN_REGION}" />
-  </Grid>
+  TextElement.FontWeight="Regular"
+  TextElement.FontSize="13"
+  TextOptions.TextFormattingMode="Ideal"
+  TextOptions.TextRenderingMode="Auto"
+  Background="{DynamicResource MaterialDesignPaper}"
+  FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <Button Content="Open Dialog" Command="{Binding OpenDialogCommand}"/>
+        <ContentControl prism:RegionManager.RegionName="{x:Static localization:RegionName.MAIN_REGION}" />
+    </Grid>
 </Window>

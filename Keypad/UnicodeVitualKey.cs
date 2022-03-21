@@ -44,9 +44,7 @@ namespace Demo.Core.VirtualKeyboard
         }
         else
         {
-          //sim.Keyboard.TextEntry(Content.ToString());
           sim.Keyboard.KeyPress(VirtualKey);
-          //sim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
         }
 
       base.OnClick();

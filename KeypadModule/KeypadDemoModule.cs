@@ -16,14 +16,14 @@ namespace KeypadModule
     {
       containerRegistry.Register<IInputSimulator, InputSimulator>();
       //containerRegistry.Register<IDialogService, MaterialDesignDialogService>();
-      containerRegistry.RegisterDialog<DemoPrismDialogView, DemoPrismDialogViewModel>();
+      //containerRegistry.RegisterDialog<DemoPrismDialogView, DemoPrismDialogViewModel>();
     }
 
     public void OnInitialized(IContainerProvider containerProvider)
     {
       var regionManager = containerProvider.Resolve<IRegionManager>();
 
-      regionManager.RegisterViewWithRegion(RegionName.MAIN_REGION, typeof(DemoKeypadView));
+      //regionManager.RegisterViewWithRegion(RegionName.MAIN_REGION, typeof(OtherKeypadView));
     }
   }
 }

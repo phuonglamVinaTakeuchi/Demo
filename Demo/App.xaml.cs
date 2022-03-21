@@ -1,7 +1,9 @@
 ﻿using System.Windows;
 using Demo.Core.Adapter;
-using Demo.Views;
+using Demo.Test.Views;
 using KeypadModule;
+using KeypadModule.ViewModels;
+using KeypadModule.Views;
 using MaterialDesignThemes.Wpf;
 using Prism.Ioc;
 using Prism.Modularity;
@@ -21,9 +23,10 @@ namespace Demo.Test
     protected override void RegisterTypes(IContainerRegistry containerRegistry)
     {
 
-      //containerRegistry.Register<IRegionAdapter, DialogHostRegionAdapter>();
+            //containerRegistry.Register<IRegionAdapter, DialogHostRegionAdapter>();
+            containerRegistry.RegisterDialog<OtherKeypadView, OtherKeypadViewModel>();
 
-    }
+        }
 
     protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
     {
